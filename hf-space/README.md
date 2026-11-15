@@ -2,7 +2,7 @@
 title: China IIT & Expat Tax Calculator (2026-2027)
 emoji: 🧮
 colorFrom: blue
-colorTo: slate
+colorTo: indigo
 sdk: static
 pinned: false
 license: mit
