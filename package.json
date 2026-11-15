@@ -1,0 +1,52 @@
+{
+  "name": "china-iit-engine",
+  "version": "1.0.0",
+  "description": "Zero-dependency China Individual Income Tax (IIT) engine for expats and residents: 7-bracket progressive tax, annual bonus separate taxation, 6-city social security caps, BIA allowances, 12-month cumulative withholding, and GBA 15% subsidy.",
+  "type": "module",
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json && node scripts/finalize-cjs.mjs",
+    "test": "node --test test/engine.test.mjs"
+  },
+  "homepage": "https://chinataxcalc.com/calculator",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbigailDavised/china-iit-engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AbigailDavised/china-iit-engine/issues"
+  },
+  "keywords": [
+    "china-tax",
+    "individual-income-tax",
+    "china-iit",
+    "expat-tax",
+    "annual-bonus",
+    "social-security",
+    "gba-subsidy",
+    "payroll-calculator"
+  ],
+  "author": "Abigail Davis <abigaild@agentmail.to>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
+}

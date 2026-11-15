@@ -1,0 +1,434 @@
+{
+  "schemaVersion": "2026.1",
+  "source": "ChinaTaxCalc.com (compiled from STA & municipal HRSS circulars)",
+  "standardAnnualDeductionRMB": 60000,
+  "annualBonusSeparateTaxValidThrough": "2027-12-31",
+  "currencyRates": {
+    "RMB": {
+      "code": "RMB",
+      "symbol": "¥",
+      "name": "Chinese Yuan (CNY)",
+      "rateToRMB": 1
+    },
+    "USD": {
+      "code": "USD",
+      "symbol": "$",
+      "name": "US Dollar (USD)",
+      "rateToRMB": 7.24
+    },
+    "EUR": {
+      "code": "EUR",
+      "symbol": "€",
+      "name": "Euro (EUR)",
+      "rateToRMB": 7.86
+    },
+    "GBP": {
+      "code": "GBP",
+      "symbol": "£",
+      "name": "British Pound (GBP)",
+      "rateToRMB": 9.22
+    },
+    "SGD": {
+      "code": "SGD",
+      "symbol": "S$",
+      "name": "Singapore Dollar (SGD)",
+      "rateToRMB": 5.42
+    },
+    "HKD": {
+      "code": "HKD",
+      "symbol": "HK$",
+      "name": "Hong Kong Dollar (HKD)",
+      "rateToRMB": 0.93
+    }
+  },
+  "iitBrackets": [
+    {
+      "level": 1,
+      "minAnnualIncome": 0,
+      "maxAnnualIncome": 36000,
+      "rate": 0.03,
+      "quickDeduction": 0
+    },
+    {
+      "level": 2,
+      "minAnnualIncome": 36000,
+      "maxAnnualIncome": 144000,
+      "rate": 0.1,
+      "quickDeduction": 2520
+    },
+    {
+      "level": 3,
+      "minAnnualIncome": 144000,
+      "maxAnnualIncome": 300000,
+      "rate": 0.2,
+      "quickDeduction": 16920
+    },
+    {
+      "level": 4,
+      "minAnnualIncome": 300000,
+      "maxAnnualIncome": 420000,
+      "rate": 0.25,
+      "quickDeduction": 31920
+    },
+    {
+      "level": 5,
+      "minAnnualIncome": 420000,
+      "maxAnnualIncome": 660000,
+      "rate": 0.3,
+      "quickDeduction": 52920
+    },
+    {
+      "level": 6,
+      "minAnnualIncome": 660000,
+      "maxAnnualIncome": 960000,
+      "rate": 0.35,
+      "quickDeduction": 85920
+    },
+    {
+      "level": 7,
+      "minAnnualIncome": 960000,
+      "maxAnnualIncome": null,
+      "rate": 0.45,
+      "quickDeduction": 181920
+    }
+  ],
+  "citySocialSecurityCaps": [
+    {
+      "id": "shanghai",
+      "name": "Shanghai",
+      "avgWage": 12183,
+      "maxBase": 36549,
+      "minBase": 7310,
+      "employeeRates": {
+        "pension": 0.08,
+        "medical": 0.02,
+        "unemployment": 0.005,
+        "housingFund": 0
+      },
+      "employerRates": {
+        "pension": 0.16,
+        "medical": 0.095,
+        "unemployment": 0.005,
+        "workInjury": 0.0026,
+        "maternity": 0.01,
+        "housingFund": 0
+      },
+      "notes": "Expat Social Security exemption is historically supported in Shanghai (Hu Ren She Han [2021] No. 272). Foreign hires may mutually agree with employers to opt out."
+    },
+    {
+      "id": "beijing",
+      "name": "Beijing",
+      "avgWage": 11761,
+      "maxBase": 35283,
+      "minBase": 6326,
+      "employeeRates": {
+        "pension": 0.08,
+        "medical": 0.02,
+        "unemployment": 0.005,
+        "housingFund": 0
+      },
+      "employerRates": {
+        "pension": 0.16,
+        "medical": 0.098,
+        "unemployment": 0.008,
+        "workInjury": 0.004,
+        "maternity": 0.008,
+        "housingFund": 0
+      },
+      "notes": "Beijing strictly mandates statutory social security for expat employees unless protected by a bilateral social security totalization treaty (e.g., Germany, Korea, Canada)."
+    },
+    {
+      "id": "shenzhen",
+      "name": "Shenzhen",
+      "avgWage": 8807,
+      "maxBase": 26421,
+      "minBase": 4404,
+      "employeeRates": {
+        "pension": 0.08,
+        "medical": 0.02,
+        "unemployment": 0.003,
+        "housingFund": 0
+      },
+      "employerRates": {
+        "pension": 0.15,
+        "medical": 0.05,
+        "unemployment": 0.007,
+        "workInjury": 0.0028,
+        "maternity": 0.0045,
+        "housingFund": 0
+      },
+      "notes": "Key Greater Bay Area hub. Eligible foreign talents can receive up to 15% effective IIT subsidy return under Qianhai and GBA regional preferential programs."
+    },
+    {
+      "id": "guangzhou",
+      "name": "Guangzhou",
+      "avgWage": 8807,
+      "maxBase": 26421,
+      "minBase": 5284,
+      "employeeRates": {
+        "pension": 0.08,
+        "medical": 0.02,
+        "unemployment": 0.002,
+        "housingFund": 0
+      },
+      "employerRates": {
+        "pension": 0.15,
+        "medical": 0.0685,
+        "unemployment": 0.0048,
+        "workInjury": 0.0032,
+        "maternity": 0.0085,
+        "housingFund": 0
+      },
+      "notes": "Core GBA capital with competitive cost structure. Nansha district offers 15% IIT ceiling refunds for verified overseas talent."
+    },
+    {
+      "id": "hangzhou",
+      "name": "Hangzhou",
+      "avgWage": 8023,
+      "maxBase": 24069,
+      "minBase": 4814,
+      "employeeRates": {
+        "pension": 0.08,
+        "medical": 0.02,
+        "unemployment": 0.005,
+        "housingFund": 0
+      },
+      "employerRates": {
+        "pension": 0.15,
+        "medical": 0.095,
+        "unemployment": 0.005,
+        "workInjury": 0.003,
+        "maternity": 0.01,
+        "housingFund": 0
+      },
+      "notes": "Major tech & e-commerce capital. High concentration of international engineers and cross-border specialists."
+    },
+    {
+      "id": "chengdu",
+      "name": "Chengdu",
+      "avgWage": 7356,
+      "maxBase": 22068,
+      "minBase": 4414,
+      "employeeRates": {
+        "pension": 0.08,
+        "medical": 0.02,
+        "unemployment": 0.004,
+        "housingFund": 0
+      },
+      "employerRates": {
+        "pension": 0.16,
+        "medical": 0.069,
+        "unemployment": 0.006,
+        "workInjury": 0.003,
+        "maternity": 0.008,
+        "housingFund": 0
+      },
+      "notes": "Western China economic powerhouse with low cost of living and attractive high-tech talent incentives."
+    }
+  ],
+  "gba15PercentSubsidyCities": [
+    {
+      "id": "shenzhen",
+      "name": "Shenzhen (Qianhai / Hetao)",
+      "quota": "Up to RMB 5M per year",
+      "subsidyFormula": "Actual IIT Paid - (Taxable Income × 15%)"
+    },
+    {
+      "id": "guangzhou",
+      "name": "Guangzhou (Nansha / Huangpu)",
+      "quota": "Up to RMB 5M per year",
+      "subsidyFormula": "Actual IIT Paid - (Taxable Income × 15%)"
+    },
+    {
+      "id": "zhuhai",
+      "name": "Zhuhai (Hengqin Cooperation Zone)",
+      "quota": "Up to RMB 5M per year",
+      "subsidyFormula": "Actual IIT Paid - (Taxable Income × 15%)"
+    },
+    {
+      "id": "foshan",
+      "name": "Foshan",
+      "quota": "Full differential grant",
+      "subsidyFormula": "Actual IIT Paid - (Taxable Income × 15%)"
+    },
+    {
+      "id": "dongguan",
+      "name": "Dongguan",
+      "quota": "High-tech talent subsidy",
+      "subsidyFormula": "Actual IIT Paid - (Taxable Income × 15%)"
+    },
+    {
+      "id": "zhongshan",
+      "name": "Zhongshan",
+      "quota": "Full differential grant",
+      "subsidyFormula": "Actual IIT Paid - (Taxable Income × 15%)"
+    },
+    {
+      "id": "jiangmen",
+      "name": "Jiangmen",
+      "quota": "Full differential grant",
+      "subsidyFormula": "Actual IIT Paid - (Taxable Income × 15%)"
+    },
+    {
+      "id": "huizhou",
+      "name": "Huizhou",
+      "quota": "Full differential grant",
+      "subsidyFormula": "Actual IIT Paid - (Taxable Income × 15%)"
+    },
+    {
+      "id": "zhaoqing",
+      "name": "Zhaoqing",
+      "quota": "Full differential grant",
+      "subsidyFormula": "Actual IIT Paid - (Taxable Income × 15%)"
+    }
+  ],
+  "globalRelocationBenchmarks": [
+    {
+      "id": "us_ca",
+      "name": "United States (California)",
+      "currency": "USD",
+      "defaultExchangeRateToRMB": 7.24,
+      "costOfLivingIndexVsShanghai": 185,
+      "keyFeatures": [
+        "Federal Progressive Tax (10% - 37%)",
+        "California State Tax (up to 13.3% - highest in US)",
+        "FICA: Social Security 6.2% (capped at $168,600) + Medicare 1.45% + 0.9% surtax",
+        "High housing and medical expenses out-of-pocket"
+      ],
+      "sampleEffectiveTaxAt150kUSD": {
+        "incomeTax": 34447,
+        "socialInsuranceOrFica": 11475,
+        "totalDeductions": 45922,
+        "netCash": 104078,
+        "effectiveRate": 0.30614460666666665,
+        "marginalRate": 0.333
+      }
+    },
+    {
+      "id": "us_ny",
+      "name": "United States (New York City)",
+      "currency": "USD",
+      "defaultExchangeRateToRMB": 7.24,
+      "costOfLivingIndexVsShanghai": 195,
+      "keyFeatures": [
+        "Federal Progressive Tax (10% - 37%)",
+        "NY State Income Tax (4% - 10.9%)",
+        "NYC Local Resident Tax (3.078% - 3.876%)",
+        "High municipal and sales tax burden"
+      ],
+      "sampleEffectiveTaxAt150kUSD": {
+        "incomeTax": 35952,
+        "socialInsuranceOrFica": 11475,
+        "totalDeductions": 47427,
+        "netCash": 102573,
+        "effectiveRate": 0.31618,
+        "marginalRate": 0.47
+      }
+    },
+    {
+      "id": "us_tx",
+      "name": "United States (Texas - No State Tax)",
+      "currency": "USD",
+      "defaultExchangeRateToRMB": 7.24,
+      "costOfLivingIndexVsShanghai": 140,
+      "keyFeatures": [
+        "Federal Progressive Tax Only (10% - 37%)",
+        "0% Texas State Income Tax",
+        "FICA Social Security & Medicare applies",
+        "Property taxes are relatively high in Texas"
+      ],
+      "sampleEffectiveTaxAt150kUSD": {
+        "incomeTax": 22752,
+        "socialInsuranceOrFica": 11475,
+        "totalDeductions": 34227,
+        "netCash": 115773,
+        "effectiveRate": 0.22818,
+        "marginalRate": 0.37
+      }
+    },
+    {
+      "id": "uk_london",
+      "name": "United Kingdom (London)",
+      "currency": "GBP",
+      "defaultExchangeRateToRMB": 9.22,
+      "costOfLivingIndexVsShanghai": 180,
+      "keyFeatures": [
+        "Personal Allowance £12,570 (tapers to £0 above £100,000)",
+        "Basic rate 20%, Higher rate 40%, Additional rate 45% (>£125,140)",
+        "60% effective marginal tax trap between £100k - £125k",
+        "Employee National Insurance (8% between £12,570-£50,270, 2% thereafter)"
+      ],
+      "sampleEffectiveTaxAt150kUSD": {
+        "incomeTax": 48313,
+        "socialInsuranceOrFica": 5574,
+        "totalDeductions": 53887,
+        "netCash": 96113,
+        "effectiveRate": 0.35924352,
+        "marginalRate": 0.47
+      }
+    },
+    {
+      "id": "germany",
+      "name": "Germany (Berlin / Frankfurt)",
+      "currency": "EUR",
+      "defaultExchangeRateToRMB": 7.86,
+      "costOfLivingIndexVsShanghai": 155,
+      "keyFeatures": [
+        "Progressive Einkommensteuer (14% - 42% / 45%)",
+        "Solidaritätszuschlag (5.5% surcharge)",
+        "Social Security Package: Pension (9.3%), Health (7.3%+), Unemployment (1.3%), Care (2.2%)",
+        "Total statutory employee deductions around 40% - 48%"
+      ],
+      "sampleEffectiveTaxAt150kUSD": {
+        "incomeTax": 40527,
+        "socialInsuranceOrFica": 18000,
+        "totalDeductions": 58527,
+        "netCash": 91473,
+        "effectiveRate": 0.3901808,
+        "marginalRate": 0.45
+      }
+    },
+    {
+      "id": "singapore",
+      "name": "Singapore",
+      "currency": "SGD",
+      "defaultExchangeRateToRMB": 5.42,
+      "costOfLivingIndexVsShanghai": 210,
+      "keyFeatures": [
+        "Top personal tax rate is low (max 24%)",
+        "Foreigners with Employment Pass do not pay CPF (0% CPF)",
+        "No capital gains or inheritance tax",
+        "Extremely high cost of living (rent & schooling often $4k-$6k+/mo)"
+      ],
+      "sampleEffectiveTaxAt150kUSD": {
+        "incomeTax": 15925,
+        "socialInsuranceOrFica": 0,
+        "totalDeductions": 15925,
+        "netCash": 134075,
+        "effectiveRate": 0.10616915422885571,
+        "marginalRate": 0.24
+      }
+    },
+    {
+      "id": "hongkong",
+      "name": "Hong Kong SAR",
+      "currency": "HKD",
+      "defaultExchangeRateToRMB": 0.93,
+      "costOfLivingIndexVsShanghai": 190,
+      "keyFeatures": [
+        "Salaries Tax capped at Standard Rate 15% (or 16% on high earners) or Progressive (2% - 17%)",
+        "MPF mandatory contribution capped at HK$1,500/month",
+        "No dividend, capital gains, or VAT tax",
+        "Very high housing and living costs"
+      ],
+      "sampleEffectiveTaxAt150kUSD": {
+        "incomeTax": 22500,
+        "socialInsuranceOrFica": 2300,
+        "totalDeductions": 24800,
+        "netCash": 125200,
+        "effectiveRate": 0.16533333333333333,
+        "marginalRate": 0.16
+      }
+    }
+  ]
+}

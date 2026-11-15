@@ -1,0 +1,7 @@
+city_id,city_name,avg_monthly_wage_rmb,max_base_3x_rmb,min_base_60pct_rmb,employee_pension_rate,employee_medical_rate,employee_unemployment_rate,employee_total_rate,employer_total_rate,expat_policy_notes
+shanghai,Shanghai,12183,36549,7310,0.08,0.02,0.005,0.105,0.2726,Expat Social Security exemption is historically supported in Shanghai (Hu Ren She Han [2021] No. 272). Foreign hires may mutually agree with employers to opt out.
+beijing,Beijing,11761,35283,6326,0.08,0.02,0.005,0.105,0.278,"Beijing strictly mandates statutory social security for expat employees unless protected by a bilateral social security totalization treaty (e.g., Germany, Korea, Canada)."
+shenzhen,Shenzhen,8807,26421,4404,0.08,0.02,0.003,0.103,0.2143,Key Greater Bay Area hub. Eligible foreign talents can receive up to 15% effective IIT subsidy return under Qianhai and GBA regional preferential programs.
+guangzhou,Guangzhou,8807,26421,5284,0.08,0.02,0.002,0.102,0.235,Core GBA capital with competitive cost structure. Nansha district offers 15% IIT ceiling refunds for verified overseas talent.
+hangzhou,Hangzhou,8023,24069,4814,0.08,0.02,0.005,0.105,0.263,Major tech & e-commerce capital. High concentration of international engineers and cross-border specialists.
+chengdu,Chengdu,7356,22068,4414,0.08,0.02,0.004,0.104,0.246,Western China economic powerhouse with low cost of living and attractive high-tech talent incentives.

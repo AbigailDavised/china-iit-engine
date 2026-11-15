@@ -1,0 +1,10 @@
+city_id,municipality_or_zone,annual_subsidy_cap,subsidy_formula
+shenzhen,Shenzhen (Qianhai / Hetao),Up to RMB 5M per year,Actual IIT Paid - (Taxable Income × 15%)
+guangzhou,Guangzhou (Nansha / Huangpu),Up to RMB 5M per year,Actual IIT Paid - (Taxable Income × 15%)
+zhuhai,Zhuhai (Hengqin Cooperation Zone),Up to RMB 5M per year,Actual IIT Paid - (Taxable Income × 15%)
+foshan,Foshan,Full differential grant,Actual IIT Paid - (Taxable Income × 15%)
+dongguan,Dongguan,High-tech talent subsidy,Actual IIT Paid - (Taxable Income × 15%)
+zhongshan,Zhongshan,Full differential grant,Actual IIT Paid - (Taxable Income × 15%)
+jiangmen,Jiangmen,Full differential grant,Actual IIT Paid - (Taxable Income × 15%)
+huizhou,Huizhou,Full differential grant,Actual IIT Paid - (Taxable Income × 15%)
+zhaoqing,Zhaoqing,Full differential grant,Actual IIT Paid - (Taxable Income × 15%)
