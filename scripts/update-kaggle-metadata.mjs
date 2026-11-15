@@ -69,6 +69,7 @@ const r2 = await fetch(`https://www.kaggle.com/api/v1/datasets/metadata/${userna
   headers: { Authorization: auth, 'Content-Type': 'application/json' },
   body: JSON.stringify({
     ...info,
+    subtitle: '7-bracket China IIT rates, 6-city social security caps & GBA 15% subsidies.',
     isPrivate: false,
     expectedUpdateFrequency: 'quarterly',
     userSpecifiedSources:

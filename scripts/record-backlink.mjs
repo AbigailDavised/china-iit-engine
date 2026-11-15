@@ -1,3 +1,4 @@
+import crypto from 'node:crypto';
 import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
@@ -6,8 +7,8 @@ const Database = require('E:/Soft/misc/backlink-pipeline/node_modules/better-sql
 const db = new Database('E:/Soft/misc/backlink-pipeline/apps/worker/data/backlink.db');
 
 const insert = db.prepare(`
-  INSERT OR IGNORE INTO targets (canonical_domain, channel, entry_url, title, language)
-  VALUES (@canonical_domain, @channel, @entry_url, @title, @language)
+  INSERT OR IGNORE INTO targets (id, canonical_domain, channel, entry_url, title, language, idempotency_key, created_at)
+  VALUES (@id, @canonical_domain, @channel, @entry_url, @title, @language, @idempotency_key, @created_at)
 `);
 
 const entries = [
@@ -55,8 +56,15 @@ const entries = [
   },
 ];
 
+const now = Date.now();
 for (const e of entries) {
-  const res = insert.run(e);
+  const idempotency_key = crypto.createHash('sha256').update(`${e.channel}:${e.entry_url}`).digest('hex').slice(0, 32);
+  const res = insert.run({
+    id: crypto.randomUUID(),
+    ...e,
+    idempotency_key,
+    created_at: now,
+  });
   console.log(`[backlink.db] ${e.entry_url} -> changes=${res.changes}`);
 }
 db.close();
