@@ -13,6 +13,20 @@ const insert = db.prepare(`
 
 const entries = [
   {
+    canonical_domain: 'npmjs.com',
+    channel: 'ecosystem_parasite',
+    entry_url: 'https://www.npmjs.com/package/china-iit-engine',
+    title: 'china-iit-engine@1.0.0 on npm Registry',
+    language: 'en',
+  },
+  {
+    canonical_domain: 'deps.dev',
+    channel: 'ecosystem_parasite',
+    entry_url: 'https://deps.dev/npm/china-iit-engine',
+    title: 'china-iit-engine on Google deps.dev (Dofollow homepage -> chinataxcalc.com/calculator)',
+    language: 'en',
+  },
+  {
     canonical_domain: 'huggingface.co',
     channel: 'ecosystem_parasite',
     entry_url: 'https://huggingface.co/spaces/AbigailDavised/china-iit-expat-calculator',
